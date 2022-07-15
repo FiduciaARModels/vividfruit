@@ -1,0 +1,11 @@
+Model Information:
+* title:	Fruit - Aple #3DScanFruitVeg
+* source:	https://sketchfab.com/3d-models/fruit-aple-3dscanfruitveg-ec5fb91ba449448b87bab2eb11e284d1
+* author:	Jörg Ledergerber (https://sketchfab.com/jledergerber)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Fruit - Aple #3DScanFruitVeg" (https://sketchfab.com/3d-models/fruit-aple-3dscanfruitveg-ec5fb91ba449448b87bab2eb11e284d1) by Jörg Ledergerber (https://sketchfab.com/jledergerber) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

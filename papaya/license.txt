@@ -1,0 +1,11 @@
+Model Information:
+* title:	Papaya 3D photogrammetry
+* source:	https://sketchfab.com/3d-models/papaya-3d-photogrammetry-3331e1a05cad48ecb95d11e8d7930a20
+* author:	Grasiele Bastos (https://sketchfab.com/grasielebastos)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Papaya 3D photogrammetry" (https://sketchfab.com/3d-models/papaya-3d-photogrammetry-3331e1a05cad48ecb95d11e8d7930a20) by Grasiele Bastos (https://sketchfab.com/grasielebastos) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

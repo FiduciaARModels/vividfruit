@@ -1,0 +1,11 @@
+Model Information:
+* title:	Star Fruit (Game Ready / 2K PBR)
+* source:	https://sketchfab.com/3d-models/star-fruit-game-ready-2k-pbr-5c857ed29ecf4236843e30ea4a2cde51
+* author:	Meerschaum Digital (https://sketchfab.com/meerschaumdigital)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Star Fruit (Game Ready / 2K PBR)" (https://sketchfab.com/3d-models/star-fruit-game-ready-2k-pbr-5c857ed29ecf4236843e30ea4a2cde51) by Meerschaum Digital (https://sketchfab.com/meerschaumdigital) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

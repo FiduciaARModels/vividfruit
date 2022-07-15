@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer bounds="tight" enable-pan src="mango/mango.gltf" ar ar-modes="scene-viewer webxr quick-look" camera-controls environment-image="neutral" shadow-intensity="1">
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in AR
+      </button>
+	  
+	  <div class="slider">
+		<div class="slides">
+		  <button class="slide selected" onclick="switchSrc(this, 'mango/mango', 'mango.png', 'https://www.youtube.com/embed/wf3WqjSBqXM')" style="background-image: url('mango.jpg');">
+		  </button><button class="slide" onclick="switchSrc(this, 'apple/apple', 'apple.jpg','https://www.youtube.com/embed/6cbJA4MWIBQ')" style="background-image: url('apple.jpg');">
+		  </button><button class="slide" onclick="switchSrc(this, 'star/star', 'star.jpg','https://www.youtube.com/embed/cVqImux19z0')" style="background-image: url('star.jpg');">
+		  </button><button class="slide" onclick="switchSrc(this, 'papaya/papaya', 'papaya.jpg','https://www.youtube.com/embed/dVqC4M_6EDg')" style="background-image: url('papaya.jpg');">
+		  
+		</div>
+	  </div>
+	  
+	  <img src="fiducia_logo1.png" id="fiducia-icon" align="center" style="width: 100px;padding-left: 20px;padding-top: 10px;"></a>
+	  <a href="#popup" onclick="showPopup('video')"><img src="noun-youtube-897674-DA0A23.png" id="youtube-icon" align="center" style="width: 50px;padding-left: 315px;padding-top: 150px;"></a>
+	  <a href="#popup" onclick="showPopup('text')"><img src="noun-info-1582929-275DBA.png" title="Wecome to Fiducia | AI" id="info-icon" align="center" style="width: 30px;padding-left: 325px;"></a>
+	  <!--<span id="info-text">Welcome to Fiducia | AI</span>-->
+    </model-viewer>  
+    
+	
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+	
+	<div id="popup1" class="overlay">
+		<div class="popup" id="popup">
+			<!-- This hides it. -->
+			<a class="close" href="#popup1" onclick="closePopup()">×</a>
+			<div class="content" id="content">
+				This is a test model, watch the youtube video to know more.
+			</div>
+			<div id="videoContent">
+				<iframe id="vino-video" src="https://www.youtube.com/embed/wf3WqjSBqXM"></iframe>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<script>
+		var openVideo = function(){
+			//window.open("https://www.youtube.com/watch?v=7gquYRxLMFI", '_blank').focus();
+			document.getElementById("popup").style.display = '';
+		}
+		var showPopup = function(txt){
+			document.getElementById("popup1").style.display = '';
+			if(txt=='text'){
+				document.getElementById("videoContent").style.display = 'none';
+				document.getElementById("content").style.display = '';
+			}else{
+				document.getElementById("videoContent").style.display = '';
+				document.getElementById("content").style.display = 'none';
+			}
+			
+		}
+		var closePopup = function(){
+			var iframe = document.getElementById('vino-video');
+			iframe.src = iframe.src;
+		}
+		
+	</script>
+	<script src="script.js"></script>
+	<script type="module">
+	  const modelViewer = document.querySelector("model-viewer");
+
+	  window.switchSrc = (element, name, poster, video) => {
+		var iframe = document.getElementById('vino-video');
+		iframe.src = video;
+		const base = name;
+		modelViewer.src = base + '.gltf';
+		modelViewer.poster = poster;
+		const slides = document.querySelectorAll(".slide");
+		slides.forEach((element) => {element.classList.remove("selected");});
+		element.classList.add("selected");
+	  };
+
+	  document.querySelector(".slider").addEventListener('beforexrselect', (ev) => {
+		// Keep slider interactions from affecting the XR scene.
+		ev.preventDefault();
+	  });
+	</script>
+
+	<style>
+	  /* This keeps child nodes hidden while the element loads */
+	  :not(:defined) > * {
+		display: none;
+	  }
+
+	  model-viewer {
+		overflow-x: hidden;
+		--poster-color: #eee;
+	  }
+
+	  #ar-button {
+		background-image: url(../../assets/ic_view_in_ar_new_googblue_48dp.png);
+		background-repeat: no-repeat;
+		background-size: 20px 20px;
+		background-position: 12px 50%;
+		background-color: #fff;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		white-space: nowrap;
+		bottom: 132px;
+		padding: 0px 16px 0px 40px;
+		font-family: Roboto Regular, Helvetica Neue, sans-serif;
+		font-size: 14px;
+		color:#4285f4;
+		height: 36px;
+		line-height: 36px;
+		border-radius: 18px;
+		border: 1px solid #DADCE0;
+	  }
+
+	  #ar-button:active {
+		background-color: #E8EAED;
+	  }
+
+	  #ar-button:focus {
+		outline: none;
+	  }
+
+	  #ar-button:focus-visible {
+		outline: 1px solid #4285f4;
+	  }
+
+	  @keyframes circle {
+		from { transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg); }
+		to   { transform: translateX(-50%) rotate(360deg) translateX(50px) rotate(-360deg); }
+	  }
+
+	  @keyframes elongate {
+		from { transform: translateX(100px); }
+		to   { transform: translateX(-100px); }
+	  }
+
+	  model-viewer > #ar-prompt {
+		position: absolute;
+		left: 50%;
+		bottom: 175px;
+		animation: elongate 2s infinite ease-in-out alternate;
+		display: none;
+	  }
+
+	  model-viewer[ar-status="session-started"] > #ar-prompt {
+		display: block;
+	  }
+
+	  model-viewer > #ar-prompt > img {
+		animation: circle 4s linear infinite;
+	  }
+
+	  model-viewer > #ar-failure {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 175px;
+		display: none;
+	  }
+
+	  model-viewer[ar-tracking="not-tracking"] > #ar-failure {
+		display: block;
+	  }
+
+	  .slider {
+		width: 100%;
+		text-align: center;
+		overflow: hidden;
+		position: absolute;
+		bottom: 16px;
+	  }
+
+	  .slides {
+		display: flex;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		scroll-behavior: smooth;
+		-webkit-overflow-scrolling: touch;
+	  }
+
+	  .slide {
+		scroll-snap-align: start;
+		flex-shrink: 0;
+		width: 100px;
+		height: 100px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: #fff;
+		margin-right: 10px;
+		border-radius: 10px;
+		border: none;
+		display: flex;
+	  }
+
+	  .slide.selected {
+		border: 2px solid #4285f4;
+	  }
+
+	  .slide:focus {
+		outline: none;
+	  }
+
+	  .slide:focus-visible {
+		outline: 1px solid #4285f4;
+	  }
+
+	</style>
+  </body>
+</html>

@@ -1,0 +1,305 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 885,
+      "max": [
+        0.046404220163822174,
+        0.043140627443790436,
+        0.023662054911255836
+      ],
+      "min": [
+        -0.04110581427812576,
+        -0.04880071431398392,
+        -0.02695338986814022
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 10620,
+      "componentType": 5126,
+      "count": 885,
+      "max": [
+        0.9999188184738159,
+        0.9771031737327576,
+        0.9997690916061401
+      ],
+      "min": [
+        -0.9937149286270142,
+        -0.9789696335792542,
+        -0.9976733922958374
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 885,
+      "max": [
+        0.9956014752388,
+        0.9913561344146729,
+        0.9983205795288086,
+        1.0
+      ],
+      "min": [
+        -0.9949385523796082,
+        -0.9971399307250977,
+        -0.9998349547386169,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 885,
+      "max": [
+        0.995622992515564,
+        0.9971778392791748
+      ],
+      "min": [
+        0.0046189166605472565,
+        0.005710713565349579
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 7080,
+      "componentType": 5126,
+      "count": 885,
+      "max": [
+        0.995622992515564,
+        0.9971778392791748
+      ],
+      "min": [
+        0.0046189166605472565,
+        0.005710713565349579
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 4800,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Meerschaum Digital (https://sketchfab.com/meerschaumdigital)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/star-fruit-game-ready-2k-pbr-5c857ed29ecf4236843e30ea4a2cde51",
+      "title": "Star Fruit (Game Ready / 2K PBR)"
+    },
+    "generator": "Sketchfab-12.68.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 19200,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 14160,
+      "byteOffset": 19200,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 21240,
+      "byteOffset": 33360,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 14160,
+      "byteOffset": 54600,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 68760,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Star_Fruit_PBR_baseColor.jpeg"
+    },
+    {
+      "uri": "textures/Star_Fruit_PBR_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/Star_Fruit_PBR_normal.jpeg"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Star_Fruit_PBR",
+      "normalTexture": {
+        "index": 2
+      },
+      "occlusionTexture": {
+        "index": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "metallicRoughnessTexture": {
+          "index": 1
+        },
+        "roughnessFactor": 0.7
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Star Fruit_Star Fruit PBR_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4
+          },
+          "indices": 5,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "6a20ff654a564837bad0acb5f6076388.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        9.295144081115723,
+        2.7055909633636475,
+        -6.509347915649414,
+        1.0
+      ],
+      "name": "Star Fruit"
+    },
+    {
+      "mesh": 0,
+      "name": "Star Fruit_Star Fruit PBR_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}
